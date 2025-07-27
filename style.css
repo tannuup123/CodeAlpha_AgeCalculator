@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("121.webp") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+  transition: background 0.4s ease-in-out, color 0.3s ease-in-out;
+}
+
+.Main {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 400px;
+  margin: auto;
+  transition: background-color 0.3s;
+}
+
+input[type="date"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  width: 80%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons button {
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #005fa3;
+}
+
+#result {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+}
+
+.dark-mode {
+  background: url("122.webp") no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+}
+
+.dark-mode .Main {
+  background-color: rgba(30, 30, 30, 0.85);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .Main {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
